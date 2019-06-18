@@ -6,6 +6,7 @@ import groovy.mock.interceptor.MockFor
 
 class SuggestControllerTests extends Specification implements ControllerUnitTest<SuggestController> {
 
+    @SuppressWarnings("GrUnresolvedAccess")
     void "test getting a suggestion"() {
 
         when: "We ask the controller for a suggestion"
@@ -19,6 +20,7 @@ class SuggestControllerTests extends Specification implements ControllerUnitTest
         then: "it returns simple text json response."
 
         '["one","two"]' == response.text
+        //noinspection GroovyAssignabilityCheck
         "two" == response.json[1]
     }
 }

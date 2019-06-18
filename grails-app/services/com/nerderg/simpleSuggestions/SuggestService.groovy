@@ -67,7 +67,7 @@ class SuggestService {
         return dataMap[subject]
     }
 
-    private List<String> loadSuggestionsFromFile(File file) {
+    private static List<String> loadSuggestionsFromFile(File file) {
         List<String> suggestionOptions = []
 
         if (file.exists()) {
@@ -79,7 +79,7 @@ class SuggestService {
         return suggestionOptions
     }
 
-    private List<String> loadSuggestionsFromClasspath(File file) {
+    private static List<String> loadSuggestionsFromClasspath(File file) {
         List<String> suggestionOptions = []
 
         ClassPathResource classPathResource = new ClassPathResource(file.path)
