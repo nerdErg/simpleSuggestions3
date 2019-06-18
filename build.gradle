@@ -10,7 +10,7 @@ buildscript {
 }
 
 version "1.0"
-group "com.nerderg"
+group "com.nerderg.plugins"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -67,6 +67,8 @@ grailsPublish {
     // TODO: Provide values here
     user = 'user'
     key = 'key'
+    
+    repo = 'plugins'
     githubSlug = 'nerdErg/simpleSuggestions3'
     license {
         name = 'Apache-2.0'
