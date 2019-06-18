@@ -64,15 +64,15 @@ bootRun {
 // enable if you wish to package this plugin as a standalone application
 bootRepackage.enabled = false
 grailsPublish {
-    // TODO: Provide values here
-    user = 'user'
-    key = 'key'
-    
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
+    userOrg = 'nerderg'
     repo = 'plugins'
     githubSlug = 'nerdErg/simpleSuggestions3'
     license {
         name = 'Apache-2.0'
     }
+    websiteUrl = "http://nerderg.com/Simple+Suggestions+plugin"
     title = "nerdErg Simple Suggestions Plugin"
     desc = "This is a simple, by convention, suggestion service to provide suggestions to auto complete controls.\n" +
             "Just point the auto complete JS URL at suggest/[subject]?term=bla and you get a JSON list of suggestion strings back.\n" +

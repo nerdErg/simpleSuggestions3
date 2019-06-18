@@ -29,7 +29,7 @@ See docs for details.
 
     def license = "Apache-2.0"
     def organization = [name: "nerdErg Pty Ltd", url: "http://www.nerderg.com/"]
-    def issueManagement = [url: "https://github.com/nerdErg/simpleSuggestions/issues"]
+    def issueManagement = [url: "https://github.com/nerdErg/simpleSuggestions3/issues"]
     def scm = [url: "https://github.com/nerdErg/simpleSuggestions"]
 
 }
