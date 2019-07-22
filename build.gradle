@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-version "1.0"
+version "1.1"
 group "com.nerderg.plugins"
 
 apply plugin:"eclipse"
@@ -87,7 +87,5 @@ assets {
 
 jar {
     exclude "com/nerderg/simpleSuggestions/test/**"
-    exclude "com/nerderg/Application*"
-    exclude "com/nerderg/BootStrap*"
     exclude "suggestions/**"
 }
